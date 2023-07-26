@@ -19,9 +19,11 @@ cat << EOF > $1/cmd.txt
 # specific command
 
 echo "Emblaze USB Command"
-# sleep 10s
-# reboot
-# shutdown
+#sleep 10s
+#reboot
+#shutdown
+#restart gateway
+#restart all
 EOF
 
 cat << EOF > $1/run.txt
@@ -36,8 +38,9 @@ cat << EOF > $1/wifi.txt
 # wifi information
 
 disable      # enable or disable
-# WIFI_SSID
-# WIFI_PASSWORD
+#enable
+#WIFI_SSID
+#WIFI_PASSWORD
 EOF
 
 cp example.ini $1/config.ini
