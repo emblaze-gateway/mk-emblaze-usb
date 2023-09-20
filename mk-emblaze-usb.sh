@@ -32,6 +32,7 @@ cat << EOF > $1/run.txt
 wifi    # wifi set
 cmd     # command
 config  # emblaze-gateway config
+#ovpn    # OpenVPN config
 EOF
 
 cat << EOF > $1/wifi.txt
@@ -44,6 +45,7 @@ disable      # enable or disable
 EOF
 
 cp example.ini $1/config.ini
+touch $1/ovpn.conf
 }
 
 if [ ! -e $DATADIR ]; then
