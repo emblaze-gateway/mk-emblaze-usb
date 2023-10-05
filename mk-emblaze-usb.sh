@@ -23,6 +23,7 @@ echo "Emblaze USB Command"
 #reboot
 #shutdown
 #restart gateway
+#restart ovpn
 #restart all
 EOF
 
